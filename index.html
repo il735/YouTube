@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>YouTube</title>
+</head>
+<body>
+
+  <h1 class="visually-hidden">YouTube</h1>
+
+  <header class="site-header">
+    <div class="container site-header__container">
+      <button class="site-header__burger" type="button" aria-label="Menu button"></button>
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="logo-img" width="116" height="25">
+      </a>
+      <form class="site-header__form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="site-header__label" aria-label="Search">
+          <input class="site-header__input" type="search" placeholder="Search" aria-label="Search" required>
+        <button class="site-header__form-btn" type="button" aria-label="search button"></button>
+        </label>
+      </form>
+
+      <div class="site-header__right-side-box">
+        <ul class="site-header__right-list">
+          <li class="site-header__right-item">
+            <a class="site-header__right-list-link" href="#">
+              <img src="img/camera.svg" alt="Camera" width="27" height="20">
+            </a>
+          </li>
+          <li class="site-header__right-item">
+            <a class="site-header__right-list-link" href="#">
+              <img src="img/squared-shape.svg" alt="favourites" width="21" height="21">
+            </a>
+          </li>
+          <li class="site-header__right-item--notific">
+            <a class="site-header__right-list-link" href="#">
+              <img src="img/bell.svg" alt="notifications" width="27" height="32">
+            </a>
+          </li>
+        </ul>
+        <a class="site-header__user" href="#">
+          <img class="site-header__user-img" src="img/user-photo.jpg" alt="User-image: boy with glasses" width="40" height="40" srcset="img/user-photo.jpg 1x, img/user-photo@2x.jpg 2x">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
