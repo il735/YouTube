@@ -4,7 +4,12 @@
 }
 
 .main-content__content-box{
+  display: flex;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.main-content__videos{
+  flex-shrink: 0;
 }

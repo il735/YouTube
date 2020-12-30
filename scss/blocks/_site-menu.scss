@@ -1,20 +1,17 @@
 .site-menu{
-  max-width: 225px;
+  width: 200px;
   padding: 3px 0px 4px 30px;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  flex-shrink: 0;
 
-  &:hover{
-    overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.5em;
   }
 
-&::-webkit-scrollbar {
-  width: 0.5em;
-}
-
-&::-webkit-scrollbar-thumb {
-  background-color: rgb(219, 219, 219);
-}
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(219, 219, 219);
+  }
 }
 
 .site-menu__subs{
@@ -24,6 +21,9 @@
 .site-menu__subs-heading{
   margin-top: 0;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .site-menu__subs-list {

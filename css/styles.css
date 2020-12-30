@@ -383,6 +383,7 @@ body {
   font-family: "Mulish", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 80px;
   overflow-x: hidden;
 }
 
@@ -418,7 +419,12 @@ img {
 }
 
 .site-header {
-  background-color: rgba(255, 255, 255, 0.959);
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.973);
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -446,6 +452,8 @@ img {
 }
 
 .site-header__form {
+  position: relative;
+  z-index: 1;
   margin-right: 13px;
 }
 
@@ -473,7 +481,11 @@ img {
 }
 
 .site-header__form-btn {
-  width: 19px;
+  position: absolute;
+  z-index: 1;
+  right: 13px;
+  top: 13px;
+  width: 20px;
   height: 20px;
   background-color: #EBEBEB;
   background-image: url("../img/search.svg");
@@ -520,7 +532,7 @@ img {
 }
 
 .site-header__right-list-link:hover .site-header__list-link-img {
-  fill: #fc3636;
+  fill: #fc0606;
 }
 
 .site-header__user-img {
@@ -629,20 +641,26 @@ img {
 }
 
 .main-content__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.site-menu {
-  max-width: 225px;
-  padding: 3px 0px 4px 30px;
-  height: 100vh;
-  overflow-y: hidden;
+.main-content__videos {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.site-menu:hover {
+.site-menu {
+  width: 200px;
+  padding: 3px 0px 4px 30px;
+  height: 100vh;
   overflow-y: scroll;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .site-menu::-webkit-scrollbar {
@@ -660,6 +678,9 @@ img {
 .site-menu__subs-heading {
   margin-top: 0;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .site-menu__subs-list {
@@ -916,5 +937,137 @@ img {
 
 .sitenav__btn:hover {
   color: #FF0000;
+}
+
+.first-sect {
+  padding-left: 65px;
+}
+
+.first-sect__owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202C;
+  margin-bottom: 30px;
+}
+
+.first-sect__owner-img {
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.first-sect__owner h4 {
+  margin: 0;
+}
+
+.first-sect__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 1255px;
+  overflow-x: scroll;
+}
+
+.first-sect__list::-webkit-scrollbar {
+  height: 0.5em;
+}
+
+.first-sect__list::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+}
+
+.first-sect__item {
+  position: relative;
+  z-index: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: 5px;
+}
+
+.first-sect__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.first-sect__item:hover .first-sect__watch-later {
+  display: block;
+}
+
+.first-sect__link {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  display: block;
+  border-radius: 14px;
+}
+
+.first-sect__link-img {
+  border-radius: 14px;
+}
+
+.first-sect__watch-later {
+  position: absolute;
+  z-index: 3;
+  right: 13px;
+  top: 15px;
+  display: none;
+}
+
+.first-sect__watch-later:hover .first-sect__watch-later-img {
+  fill: #fa1414;
+}
+
+.first-sect__link-time {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 115px;
+  text-decoration: none;
+  padding: 3px 9px;
+  background-color: #000;
+  opacity: 0.3;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.first-sect__link-heading {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202C;
+}
+
+.first-sect__link-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-sect__link-watched, .first-sect__link-owner, .first-sect__link-creat-time {
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.first-sect__link-watched {
+  margin-right: 15px;
+}
+
+.first-sect__link-creat-time {
+  margin-right: auto;
 }
 /*# sourceMappingURL=styles.css.map */
