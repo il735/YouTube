@@ -1,4 +1,5 @@
 .site-header{
+  background-color: rgba(255, 255, 255, 0.959);
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -13,7 +14,7 @@
   height: 17px;
   background-color: #fff;
   border: none;
-  background-image: url(../img/menu-burger.svg);
+  background-image: url("../img/menu-burger.svg");
   background-size: 20px 17px;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +48,7 @@
   width: 19px;
   height: 20px;
   background-color: #EBEBEB;
-  background-image: url(../img/search.svg);
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 19px 19px;
@@ -77,6 +78,10 @@
 }
 .site-header__right-list-link img{
   display: block;
+}
+
+.site-header__right-list-link:hover .site-header__list-link-img{
+  fill: rgb(252, 54, 54);
 }
 
 .site-header__user-img{

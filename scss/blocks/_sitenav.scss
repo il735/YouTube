@@ -1,0 +1,164 @@
+.sitenav{
+  margin-bottom: 58px;
+}
+
+.sitenav__list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__item:not(:last-child){
+  margin-bottom: 28px;
+}
+
+.sitenav__link{
+  display: flex;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+
+  &--active{
+    color: #FF0000;
+  }
+
+  &:hover{
+    color: #FF0000;
+  }
+
+  &-subs{
+    margin-bottom: 60px;
+  }
+
+  &-home::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/home-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-trand::before{
+    content: "";
+    width: 16px;
+    height: 21px;
+    background-image: url("../img/tranding-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 21px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-subs::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/subs.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-libr::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/library.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-history::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/history.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-watch::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/watch.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-favor::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/favourites.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-liked::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/liked.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-music::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/music.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    margin-right: 13px;
+  }
+  &-games::before{
+    content: "";
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/games.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+    background-position: center;
+    margin-right: 13px;
+  }
+}
+
+.sitenav__btn{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  &::before{
+    content: "";
+    width: 14px;
+    height: 8px;
+    background-image: url("../img/array-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 8px;
+    margin-right: 16px;
+  }
+
+  &:hover{
+    color: #FF0000;
+  }
+}
