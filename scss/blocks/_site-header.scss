@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.site-header__burger{
+.site-header__toggler{
   width: 20px;
   height: 17px;
   background-color: #fff;
@@ -24,6 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 28px;
+  padding: 15px;
   cursor: pointer;
 }
 
@@ -150,7 +151,7 @@
 
 @media only screen and (max-width: 730px){
 
-  .site-header__burger{
+  .site-header__toggler{
     display: none;
   }
 }
@@ -182,6 +183,7 @@
   }
   .site-header__form-btn{
     background-color: transparent;
+    position: static;
   }
 
   .site-header__right-side-box{

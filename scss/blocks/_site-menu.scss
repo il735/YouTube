@@ -1,9 +1,10 @@
 .site-menu{
   width: 200px;
-  padding: 3px 0px 4px 30px;
+  padding: 3px 0px 5px 30px;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-shrink: 0;
+  display: none;
 
   &::-webkit-scrollbar {
     width: 0.5em;
@@ -11,6 +12,12 @@
 
   &::-webkit-scrollbar-thumb {
     background-color: rgb(219, 219, 219);
+  }
+}
+
+.site-menu--open{
+  &.site-menu{
+    display: block;
   }
 }
 
@@ -86,5 +93,13 @@
     background-position: center;
     background-size: 19px 20px;
     margin-right: 12px;
+  }
+}
+
+@media only screen and (max-width: 730px){
+  .site-menu--open{
+    &.site-menu{
+      display: none;
+    }
   }
 }

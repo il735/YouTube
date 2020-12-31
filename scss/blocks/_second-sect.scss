@@ -1,28 +1,18 @@
-.first-sect{
+.second-sect{
   padding-left: 65px;
   margin-bottom: 50px;
 }
 
-.first-sect__owner{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+.second-sect__heading{
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 26px;
   line-height: 33px;
   color: #19202C;
-  margin-bottom: 30px;
 }
 
-.first-sect__owner-img{
-  margin-right: 20px;
-  border-radius: 50%;
-}
-.first-sect__owner h4{
-  margin: 0;
-}
-
-.first-sect__list{
+.second-sect__list{
   display: flex;
   padding: 0;
   margin: 0;
@@ -39,7 +29,7 @@
   }
 }
 
-.first-sect__item{
+.second-sect__item{
   position: relative;
   z-index: 1;
   flex-shrink: 0;
@@ -50,27 +40,27 @@
     margin-right: 40px;
   }
 
-  &:hover .first-sect__watch-later{
+  &:hover .second-sect__watch-later{
     display: block;
   }
 }
 
-.first-sect__link-img-box{
+.second-sect__link-img-box{
   position: relative;
   z-index: 1;
 }
 
-.first-sect__link{
+.second-sect__link{
   text-decoration: none;
   display: block;
   border-radius: 14px;
 }
 
-.first-sect__link-img{
+.second-sect__link-img{
   border-radius: 14px;
 }
 
-.first-sect__watch-later{
+.second-sect__watch-later{
   position: absolute;
   z-index: 3;
   right: 13px;
@@ -79,16 +69,16 @@
   border: none;
   display: none;
 
-&:hover .first-sect__watch-later-img{
+&:hover .second-sect__watch-later-img{
   fill: #fa1414;
 }
 }
 
-.first-sect__link-time{
+.second-sect__link-time{
   position: absolute;
   z-index: 1;
   right: 10px;
-  bottom: 15px;
+  bottom: 17px;
   text-decoration: none;
   padding: 3px 9px;
   background-color: #000;
@@ -99,7 +89,7 @@
   line-height: 18px;
 }
 
-.first-sect__link-heading{
+.second-sect__link-heading{
   margin-top: 10px;
   margin-bottom: 4px;
   font-weight: bold;
@@ -108,19 +98,25 @@
   color: #19202C;
 }
 
-.first-sect__link-info{
+.second-sect__link-info{
   display: flex;
 }
 
-.first-sect__link-watched, .first-sect__link-owner, .first-sect__link-creat-time{
+.second-sect__link-watched, .second-sect__link-owner, .second-sect__link-creat-time{
   margin: 0;
   font-size: 13px;
   line-height: 16px;
   color: #C2C2C2;
 }
-.first-sect__link-watched{
+.second-sect__link-watched{
   margin-right: 15px;
 }
-.first-sect__link-creat-time{
+.second-sect__link-creat-time{
   margin-right: auto;
+}
+
+@media only screen and (max-width: 820px){
+  .second-sect__link-img{
+    width: 288px;
+  }
 }
