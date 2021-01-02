@@ -1,7 +1,8 @@
-var siteMenu = document .querySelector('.site-menu');
-var siteToggler = document .querySelector('.site-header__toggler');
+var elSiteMenu = document .querySelector('.site-menu');
+var elSiteToggler = document .querySelector('.site-header__toggler');
+var elMainContentVideos = document.querySelector('.main-content__videos');
 
 
-siteToggler .addEventListener('click', function() {
-  siteMenu.classList.toggle('site-menu--open')
+elSiteToggler .addEventListener('click', function() {
+  elSiteMenu.classList.toggle('site-menu--open');
 });
