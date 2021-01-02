@@ -1292,6 +1292,7 @@ img {
   }
   .first-sect__item:not(:last-child) {
     margin-right: 0;
+    margin-bottom: 30px;
   }
   .first-sect__link-img {
     width: 350px;
@@ -1456,6 +1457,7 @@ img {
   }
   .second-sect__item:not(:last-child) {
     margin-right: 0;
+    margin-bottom: 30px;
   }
   .second-sect__link-img {
     width: 350px;
@@ -1626,6 +1628,7 @@ img {
   }
   .third-sect__item:not(:last-child) {
     margin-right: 0;
+    margin-bottom: 30px;
   }
   .third-sect__link-img {
     width: 350px;
